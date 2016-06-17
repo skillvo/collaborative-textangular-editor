@@ -7,6 +7,10 @@ Run `npm install` to install dependencies. And run `npm start` for starting serv
 
 Use `nodemon` for monitoring and auto restart server upon any modifications in server side files.
 
+**[DEMO](http://collaborative-editor.labs.webmpires.net/)**
+
+![Humor](http://i.imgur.com/F11K8Sb.png)
+
 ### How to integrate
 
 In `main.js:10`
@@ -29,7 +33,7 @@ var socket = io.connect("http://10.10.7.63:3000"); // this will be the url where
 ### How To Use Server Side Events:
 ---
 
-By default `addExistingContent` event is fired when you open an instance browser. This contains all existing data including current editor data and all users.
+By default **addExistingContent** event is fired when you open an instance in browser. This contains all existing data including current editor data and all users.
 
 ```javascript
 {
@@ -78,3 +82,7 @@ Similarly you can use `userLeft` event which is fired when some one disconnects 
 ```
 
 We are still imporoving this but its a good to go solution for collaborative editing. Mail us if any queries or if you have a cool idea to enhance this.
+
+**Thanks to:**
+
+*Text Editor* [TextAngular](https://github.com/fraywing/textAngular) , *Notification Plugin* [Toastr](https://github.com/Foxandxss/angular-toastr)
