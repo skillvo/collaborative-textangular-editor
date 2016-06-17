@@ -7,7 +7,7 @@ var app = angular.module('ngEditor', ['textAngular', 'ngSanitize', 'toastr']);
 
 app.controller('textEditorCtrl', ['$scope', '$sce', '$timeout', 'toastr', function($scope, $sce, $timeout, toastr) {
     // var socket = io.connect("http://10.10.7.219:3000");
-    var socket = io.connect("http://10.10.7.219:3000");
+    var socket = io.connect("http://192.168.1.100:3000");
 
     socket.on("changedValue", function(data) {
         // console.log(data);

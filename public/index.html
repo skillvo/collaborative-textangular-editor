@@ -23,7 +23,7 @@
 
 <body ng-controller="textEditorCtrl">
     <div class="clearfix">
-        <div class="col-md-9">
+        <div class="col-md-9" ng-show="isUserAdded">
             <h2>Type here to broadcast:</h2>
             <p></p>
             <div text-angular ng-model="htmlVariable" ng-change="change(htmlVariable)"></div>
@@ -34,10 +34,10 @@
         <div class="col-md-3 side-bar">
             <h1>{{userName}}</h1>
             <form method="POST" role="form" ng-submit="addMe()" ng-hide="isUserAdded">
-                <legend>Current Users</legend>
+                <!-- <legend>Current Users</legend> -->
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name" ng-model="userName">
+                    <input type="text" class="form-control" id="name" placeholder="Type your name to begin" ng-model="userName">
                 </div>
             </form>
             <h4>Online Users</h4>
