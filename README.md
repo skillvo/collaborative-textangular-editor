@@ -7,6 +7,8 @@ Run `npm install` to install dependencies. And run `npm start` for starting serv
 
 Use `nodemon` for monitoring and auto restart server upon any modifications in server side files.
 
+![Humor](http://i.imgur.com/F11K8Sb.png)
+
 ### How to integrate
 
 In `main.js:10`
