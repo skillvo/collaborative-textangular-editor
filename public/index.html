@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="ngEditor">
+
+<head>
+    <title>Socket Editor</title>
+    <link rel="stylesheet" type="text/css" href="lib/css/textAngular.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/1.7.0/angular-toastr.min.css">
+</head>
+
+<body ng-controller="textEditorCtrl">
+    <div class="clearfix">
+        <div class="col-md-9">
+            <h2>Type here to broadcast:</h2>
+            <p></p>
+            <div text-angular ng-model="htmlVariable" ng-change="change(htmlVariable)"></div>
+            <hr>
+            <p><strong>Output: </strong></p>
+            <div ng-bind-html="htmlVariable"></div>
+        </div>
+        <div class="col-md-3 side-bar">
+            <h1>{{userName}}</h1>
+            <form method="POST" role="form" ng-submit="addMe()" ng-hide="isUserAdded">
+                <legend>Current Users</legend>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name" ng-model="userName">
+                </div>
+            </form>
+            <h4>Online Users</h4>
+            <hr>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="user in allUsers">
+                    <i class="fa fa-circle green" ng-class="{'red': discIdx == $index, 'blue': userName === user.name}"> </i> &nbsp; {{user.name}}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-sanitize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/1.7.0/angular-toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/1.7.0/angular-toastr.tpls.min.js"></script>
+    <script src="lib/js/textAngular-rangy.min.js"></script>
+    <script src="lib/js/textAngular-sanitize.min.js"></script>
+    <script src="lib/js/textAngular.min.js"></script>
+    <script src="lib/js/main.js"></script>
+</body>
+
+</html>
