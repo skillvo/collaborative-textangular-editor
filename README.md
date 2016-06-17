@@ -1,6 +1,9 @@
 # collaborative-textangular-editor
 A collaborative editor built with Nodejs, Socket.io, Angular
 
+*Text Editor Used:*
+[TextAngular](https://github.com/fraywing/textAngular)
+
 ### Set up
 
 Run `npm install` to install dependencies. And run `npm start` for starting server.
