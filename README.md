@@ -1,9 +1,6 @@
 # collaborative-textangular-editor
 A collaborative editor built with Nodejs, Socket.io, Angular
 
-*Text Editor Used:*
-[TextAngular](https://github.com/fraywing/textAngular)
-
 ### Set up
 
 Run `npm install` to install dependencies. And run `npm start` for starting server.
@@ -83,3 +80,7 @@ Similarly you can use `userLeft` event which is fired when some one disconnects 
 ```
 
 We are still imporoving this but its a good to go solution for collaborative editing. Mail us if any queries or if you have a cool idea to enhance this.
+
+**Thanks to:**
+
+*Text Editor* [TextAngular](https://github.com/fraywing/textAngular) , *Notification Plugin* [Toastr](https://github.com/Foxandxss/angular-toastr)
