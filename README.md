@@ -39,7 +39,7 @@ By default `addExistingContent` event is fired when you open an instance browser
 ```
 
 ---
-1. Event **changedValue** - Is fired when editor value is changed. In callback you will get data containing following values:
+1) Event **changedValue** - Is fired when editor value is changed. In callback you will get data containing following values:
 
 ```javascript
 { 
@@ -53,7 +53,7 @@ socket.on("changedValue", function(data) {
 });
 ```
 
-2. Event **userAdded** - Is fired when new user joins the instance. In callback you will get data containing following values:
+2) Event **userAdded** - Is fired when new user joins the instance. In callback you will get data containing following values:
 
 ```javascript
 { 
