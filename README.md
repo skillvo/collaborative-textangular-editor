@@ -7,6 +7,8 @@ Run `npm install` to install dependencies. And run `npm start` for starting serv
 
 Use `nodemon` for monitoring and auto restart server upon any modifications in server side files.
 
+**[DEMO](http://collaborative-editor.labs.webmpires.net/)**
+
 ![Humor](http://i.imgur.com/F11K8Sb.png)
 
 ### How to integrate
