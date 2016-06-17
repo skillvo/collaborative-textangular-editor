@@ -29,7 +29,7 @@ var socket = io.connect("http://10.10.7.63:3000"); // this will be the url where
 ### How To Use Server Side Events:
 ---
 
-By default `addExistingContent` event is fired when you open an instance browser. This contains all existing data including current editor data and all users.
+By default **addExistingContent** event is fired when you open an instance in browser. This contains all existing data including current editor data and all users.
 
 ```javascript
 {
